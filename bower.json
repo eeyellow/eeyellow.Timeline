@@ -22,7 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "waitForImages": "^2.2.0"
+    "bootstrap": "^3.3.6"
   }
 }
