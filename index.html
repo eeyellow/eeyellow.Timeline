@@ -8,16 +8,97 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+
 				<div class="VivaTimeline">
-					
+					<dl>
+                        <dt>May 2016</dt>                                    
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Feb 03</div>
+                            <div class="events">
+                                <div class="events-heading">Event Heading</div>                                
+                                <div class="events-body">                                                                                            
+                                    <div class="row">
+                                    	<div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="http://lorempixel.com/400/200/nature/1" />
+                                        </div>
+                                        <div class="events-desc">
+                                        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </dd>
+                        <dt>Feb 2016</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Jan 21</div>
+                            <div class="events">
+                                <div class="events-heading">A Very Very Looooooooooooooooooooong Event Heading</div>                                
+                                <div class="events-body">                                                                                            
+                                    <div class="row">
+                                    	<div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="http://lorempixel.com/1024/768/food/1" />
+                                        </div>
+                                        <div class="events-desc">
+                                        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </dd>   
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Jan 07</div>
+                            <div class="events">
+                                <div class="events-heading">Event Heading</div>                                
+                                <div class="events-body">                                                                                            
+                                    <div class="row">
+                                    	<div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="http://lorempixel.com/800/600/cats/1" />
+                                        </div>
+                                        <div class="events-desc">
+                                        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </dd>                                    
+                        <dt>Jan 2016</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Dec 18</div>
+                            <div class="events">
+                                <div class="events-heading">Event Heading</div>                                
+                                <div class="events-body">                                                                                            
+                                    <div class="row">
+                                    	<div class="col-md-6 pull-left">
+                                            <img class="events-object img-responsive img-rounded" src="http://lorempixel.com/500/500/city/1" />
+                                        </div>
+                                        <div class="events-desc">
+                                        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </dd>
+                        <dt>Dec 2015</dt>
+                        <dt>Oct 2015</dt>
+                        <dt>Sep 2015</dt>
+                        <dt>Aug 2015</dt>
+                    </dl>
 				</div>
-			</div>
+
 		</div>
 	</div>
 
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.VivaTimeline').vivaTimeline();
+		});
+	</script>
 </body>
 </html>
