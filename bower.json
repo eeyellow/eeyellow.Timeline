@@ -1,0 +1,27 @@
+{
+  "name": "eeyellow_timeline",
+  "authors": [
+    "eeyellow <eeyellow@gmail.com>"
+  ],
+  "description": "a jquery plugin to create timeline, with expandable description div.",
+  "main": [
+    "js/eeyellow.Timeline.js",
+    "css/eeyellow.Timeline.css"
+  ],
+  "keywords": [
+    "eeyellow",
+    "timeline"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
