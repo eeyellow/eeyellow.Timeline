@@ -6,7 +6,9 @@
     var Timeline = function (element, opt) {
         //私有變數
         this.target = element;
-        this.interval;
+        this.carouselInterval;
+        this.checkImgLoad;
+        this.imgLoad = false;
         //初始化
         this._init(opt);
                     
@@ -17,7 +19,7 @@
     //ImportKML2D預設參數
     Timeline.options = {
         carousel: true,
-        intervalTime: 10000
+        carouselTime: 10000
     }
 
     //Timeline私有方法
@@ -59,7 +61,7 @@
                 });              
                              
             self.target
-                .waitForImages(true).done(function() {
+                .find('img').on('load', function(){
                     self.target
                         .find('.events-body')
                         .each(function(){
@@ -72,13 +74,8 @@
                                     }
                                 });                                                        
                             $(this).find('.row').height(maxHeight);
-                        })
-
-
-                    self.interval = setInterval(function(){
-                        self._carousel();
-                    }, self.options.intervalTime);
-                });   
+                        });                                
+                }); 
         },
 
         //綁定事件
@@ -99,19 +96,25 @@
                     self._carousel($(this));
                 });
 
-            self.target
-                .find('.events')
-                .hover(function(){
-                    clearInterval(self.interval);
-                    self.interval = null;
-                    
-                }, function(){
-                    if(self.interval == undefined){
-                        self.interval = setInterval(function(){
-                            self._carousel();
-                        }, self.options.intervalTime);
-                    }
-                });
+            if(self.options.carousel){
+                self.carouselInterval = setInterval(function(){
+                    self._carousel();
+                }, self.options.carouselTime);
+
+                self.target
+                    .find('.events')
+                    .hover(function(){
+                        clearInterval(self.carouselInterval);
+                        self.carouselInterval = null;
+                        
+                    }, function(){
+                        if(self.carouselInterval == undefined){
+                            self.carouselInterval = setInterval(function(){
+                                self._carousel();
+                            }, self.options.carouselTime);
+                        }
+                    });
+            }
         },
         
         //自動輪播

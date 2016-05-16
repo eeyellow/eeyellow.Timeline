@@ -202,12 +202,14 @@
         width: 73%;
         margin-right: 4%;
     }
+    /*
     .VivaTimeline dl dd .events .events-body {
         display: none;
     }
     .VivaTimeline dl dd .events .events-footer {
         display: none;
     }
+    */
 }
 
 @media screen and (max-width: 500px) {
